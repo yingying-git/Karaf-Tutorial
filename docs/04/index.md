@@ -40,7 +40,7 @@ We start with a fresh Karaf 4.0.4
 mvn clean install
 Install service and ui in karaf
 feature:repo-add cxf 3.1.5
-feature:install http cxf-jaxws http-whiteboard
+feature:install http cxf-jaxws cxf-jaxrs http-whiteboard
 install -s mvn:net.lr.tutorial.karaf.cxf.personservice/personservice-model/1.0-SNAPSHOT
 install -s mvn:net.lr.tutorial.karaf.cxf.personservice/personservice-server/1.0-SNAPSHOT
 install -s mvn:net.lr.tutorial.karaf.cxf.personservice/personservice-proxy/1.0-SNAPSHOT
