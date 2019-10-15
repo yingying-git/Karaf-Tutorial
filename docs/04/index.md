@@ -30,7 +30,7 @@ The example consists of four projects
 First we build, install and run the example to give an overview of what it does. The following main chapter then explains in detail how it works.
 
 ### Installing Karaf and preparing for CXF
-We start with a fresh Karaf 4.0.4
+We start with a fresh Karaf 4.2.6
 
 - Unpack Karaf from http://karaf.apache.org/index/community/download.html
 - Run Karaf using bin/karaf
@@ -39,7 +39,7 @@ We start with a fresh Karaf 4.0.4
 ```
 mvn clean install
 Install service and ui in karaf
-feature:repo-add cxf 3.1.5
+feature:repo-add cxf 3.3.1
 feature:install http cxf-jaxws cxf-jaxrs http-whiteboard
 install -s mvn:net.lr.tutorial.karaf.cxf.personservice/personservice-model/1.0-SNAPSHOT
 install -s mvn:net.lr.tutorial.karaf.cxf.personservice/personservice-server/1.0-SNAPSHOT
